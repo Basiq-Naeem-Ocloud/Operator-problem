@@ -10,6 +10,7 @@ function arrayToExpression(arr) {
     }
     const operator = stack.shift(); // Extract the main operator from front of array
     return stack.join(` ${operator} `);
+
 }
 
 const array = ["OR", ["<", "a", "b"], ["AND", ["==", "c", "d"], ["!=", "e", "f"]]];
